@@ -52,3 +52,4 @@ let promise_all = Promise.reject(new Error("Hey"))
 promise_all.then((value) => {
         console.log(value)
 })
+
