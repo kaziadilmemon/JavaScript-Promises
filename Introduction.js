@@ -1,2 +1,14 @@
-/* The Solution to the Callback hell is Promises. A Promise is a "Promise of code execution" 
-The code either execute or fails in both the cases the Subscriber will be notified */ 
+
+let promise= new Promise (function(resolve,reject){
+  alert("Hello")
+  resolve(56)
+  
+})
+
+console.log("Hello one")
+setTimeout(function() {
+  console.log("Hello Two in 2 Seconds")
+}, 2000)
+
+console.log("My name is" + "Hello Three")
+console.log(promise)
