@@ -1,7 +1,10 @@
 /* We can chain promises and make them pass the resolved valuesto one another like this: 
+
 * Here is the flow of Execution:
 1. The initial Promise resolves in 1 Seconds(Assumption).
+
 2. The next.then() handler is then called, which returns a new promise (resolved with 2 values).
+
 3. The next.then() gets the result of previous one and this keeps on going.
 
 Every call to .then() returns a new Promise whose value is passed th othe next one and so on. We can even create custom promises inside.then() */
