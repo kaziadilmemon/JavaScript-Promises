@@ -73,6 +73,7 @@ let p3 = async () => {
 
 const run = async () => {
         console.time("run")
+        
         // let a1 = await p1() // Fetch first 10 products from the database
         // let a2 = await p2() // Fetch another 10 products from the database
         // let a3 = await p3() // Fetch yet another 10 products from the database
