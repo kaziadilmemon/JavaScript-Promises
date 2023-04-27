@@ -24,3 +24,24 @@ let a = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstr
          console.log(new Date().getMilliseconds())
  }
  main2()
+
+// Problem number 3 : Create a Promise which rejects after 3 seconds use an async/await to get its value. Use a try catch to handle its error.
+
+let p = () => {
+         return new Promise((resolve, reject) => {
+                 setTimeout(() => {
+                         reject(new Error("Please this is not acceptable"))
+                 }, 3000)
+         })
+ }
+
+ let a = async () => {
+         try {
+                 let c = await p()
+                 console.log(c)
+         }
+         catch (err) {
+                 console.log("This error has been handled")
+         }
+ }
+ a()
